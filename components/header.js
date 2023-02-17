@@ -13,7 +13,7 @@ export default function Header() {
                         <Link className="mr-5 hover:text-gray-900" href="/about-me">about</Link>
                         <Link className="mr-5 hover:text-gray-900" href="/projects">projects</Link>
                         <Link className="mr-5 hover:text-gray-900" href="/posts">posts</Link>
-                        <Link className="mr-5 hover:text-gray-900" href="https://open.kakao.com/o/saOFI3Ke">Contact</Link>
+                        <Link className="mr-5 hover:text-gray-900" href="https://open.kakao.com/o/saOFI3Ke">contact</Link>
                     </nav>
                     <DarkModeToggleButton/>
                 </div>
