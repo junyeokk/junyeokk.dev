@@ -1,13 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  mode: 'jit',
+  mode: "jit",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode:'class',
+  darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        fill: "repeat(auto-fill, minmax(270px, 1fr))",
+      },
+    },
   },
   plugins: [],
-}
+};

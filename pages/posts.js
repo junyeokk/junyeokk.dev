@@ -5,8 +5,8 @@ import PostItem from "../components/posts/post-item";
 export default function Posts({ posts }) {
   return (
     <Layout>
-      <div className="flex flex-col items-center justify-center min-h-screen px-5 mb-10 px-6">
-        <div className="grid xl:grid-cols-4 md:grid-cols-3 grid-cols-2 py-10 m-6 gap-8">
+      <div className="flex flex-col min-h-screen px-5 mb-10 px-6">
+        <div className="grid grid-cols-fill py-10 m-6 gap-8">
           {posts.results.map((aPost) => (
             <PostItem key={aPost.id} data={aPost} />
           ))}
