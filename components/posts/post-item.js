@@ -9,7 +9,7 @@ export default function ProjectItem({ data }) {
   // const date = data.properties.Date;
 
   return (
-    <div className="project-card">
+    <div className="posts-card">
       <Image
         className="rounded-t-xl"
         src={imgSrc}
