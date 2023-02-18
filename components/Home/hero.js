@@ -12,6 +12,7 @@ export default function Hero() {
           <br className="hidden lg:inline-block" />
         </h1>
         <p className="mb-8 leading-relaxed">
+          경북대학교에 재학중이며, 현재(2023.02) 3학년입니다. <br />
           react와 next.js를 공부하며 개인 블로그인 junyeokk.dev를 풀스택
           개발하고 있습니다.
         </p>
