@@ -24,7 +24,9 @@ export default function ProjectItem({ data }) {
 
       <div className="p-4 flex flex-col">
         <h1 className="text-2xl font-bold">{title}</h1>
-        <h3 className="mt-4 text-xl">{description}</h3>
+        <h3 className="mt-1 text-md text-slate-500 dark:text-slate-">
+          {description}
+        </h3>
         {/* <h3 className="my-1">{date}</h3> */}
 
         <div className="flex items-start mt-2">

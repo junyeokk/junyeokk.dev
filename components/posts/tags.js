@@ -6,7 +6,7 @@ export default function Tags({ data }) {
   return {
     default: (
       <h1
-        className="px-2 mr-2 text-sm rounded-md bg-notionTagDefault w-30"
+        className="px-2 mr-2 text-sm rounded-md bg-notionTagDefault dark:bg-notionTagDarkDefault w-30"
         key={id}
       >
         {name}
@@ -14,7 +14,7 @@ export default function Tags({ data }) {
     ),
     gray: (
       <h1
-        className="px-2 mr-2 text-sm rounded-md bg-notionTagGray w-30"
+        className="px-2 mr-2 text-sm rounded-md bg-notionTagGray dark:bg-notionTagDarkGray w-30"
         key={id}
       >
         {name}
@@ -22,7 +22,7 @@ export default function Tags({ data }) {
     ),
     brown: (
       <h1
-        className="px-2 mr-2 text-sm rounded-md bg-notionTagBrown w-30"
+        className="px-2 mr-2 text-sm rounded-md bg-notionTagBrown dark:bg-notionTagDarkBrown w-30"
         key={id}
       >
         {name}
@@ -30,7 +30,7 @@ export default function Tags({ data }) {
     ),
     orange: (
       <h1
-        className="px-2 mr-2 text-sm rounded-md bg-notionTagOrange w-30"
+        className="px-2 mr-2 text-sm rounded-md bg-notionTagOrange dark:bg-notionTagDarkOrange w-30"
         key={id}
       >
         {name}
@@ -38,7 +38,7 @@ export default function Tags({ data }) {
     ),
     yellow: (
       <h1
-        className="px-2 mr-2 text-sm rounded-md bg-notionTagYellow w-30"
+        className="px-2 mr-2 text-sm rounded-md bg-notionTagYellow dark:bg-notionTagDarkYellow w-30"
         key={id}
       >
         {name}
@@ -46,7 +46,7 @@ export default function Tags({ data }) {
     ),
     green: (
       <h1
-        className="px-2 mr-2 text-sm rounded-md bg-notionTagGreen w-30"
+        className="px-2 mr-2 text-sm rounded-md bg-notionTagGreen dark:bg-notionTagDarkGreen w-30"
         key={id}
       >
         {name}
@@ -54,7 +54,7 @@ export default function Tags({ data }) {
     ),
     blue: (
       <h1
-        className="px-2 mr-2 text-sm rounded-md bg-notionTagBlue w-30"
+        className="px-2 mr-2 text-sm rounded-md bg-notionTagBlue dark:bg-notionTagDarkBlue w-30"
         key={id}
       >
         {name}
@@ -62,15 +62,15 @@ export default function Tags({ data }) {
     ),
     purple: (
       <h1
-        className="px-2 mr-2 text-sm rounded-md bg-notionTagPurple w-30"
+        className="px-2 mr-2 text-sm rounded-md bg-notionTagPurple dark:bg-notionTagDarkPurple w-30"
         key={id}
       >
         {name}
       </h1>
     ),
-    purple: (
+    pink: (
       <h1
-        className="px-2 mr-2 text-sm rounded-md bg-notionTagPurple w-30"
+        className="px-2 mr-2 text-sm rounded-md bg-notionTagPink dark:bg-notionTagDarkPink w-30"
         key={id}
       >
         {name}
@@ -78,7 +78,7 @@ export default function Tags({ data }) {
     ),
     red: (
       <h1
-        className="px-2 mr-2 text-sm rounded-md bg-notionTagRed w-30"
+        className="px-2 mr-2 text-sm rounded-md bg-notionTagRed dark:bg-notionTagDarkRed w-30"
         key={id}
       >
         {name}
