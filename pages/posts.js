@@ -42,12 +42,6 @@ export async function getServerSideProps() {
   );
   const posts = await res.json();
 
-  const postNames = posts.results.map(
-    (aPost) => aPost.properties.Name.title[0]?.plain_text
-  );
-
-  console.log(`postNames: ${postNames}`);
-
   return {
     props: { posts },
   };
