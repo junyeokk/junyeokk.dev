@@ -1,8 +1,13 @@
 import Image from "next/legacy/image";
 import Tags from "./tags";
+import Link from "next/link";
+import { getDatabase } from "../../lib/notion";
+import { Text } from "../../pages/[id]";
 
-export default function ProjectItem({ data }) {
-  const title = data.properties.Name.title[0]?.plain_text;
+export const databaseId = process.env.NOTION_DATABASE_POSTS_ID;
+
+export default function PostItem({ data }) {
+  // const title = data.properties.Name.title[0]?.plain_text;
   // const github = data.properties.Github.url;
   const description = data.properties.Description.rich_text[0]?.plain_text;
   const imgSrc = data.cover.file?.url || data.cover.external.url;
@@ -23,7 +28,11 @@ export default function ProjectItem({ data }) {
       />
 
       <div className="p-4 flex flex-col">
-        <h1 className="text-2xl font-bold">{title}</h1>
+        <h1 className="text-2xl font-bold" key={data.id}>
+          <Link href={`/${data.id}`}>
+            <Text text={data.properties.Name.title} />
+          </Link>
+        </h1>
         <h3 className="mt-1 text-md text-slate-500 dark:text-slate-">
           {description}
         </h3>
@@ -38,3 +47,17 @@ export default function ProjectItem({ data }) {
     </div>
   );
 }
+
+export const getStaticProps = async () => {
+  const database = await getDatabase(databaseId);
+
+  return {
+    props: {
+      posts: database,
+    },
+    // Next.js will attempt to re-generate the page:
+    // - When a request comes in
+    // - At most once every second
+    revalidate: 1, // In seconds
+  };
+};
