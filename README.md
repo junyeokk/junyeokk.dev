@@ -3,7 +3,7 @@
 
 ## Stack
 
-- Language `javascript`
+- Language `javascript` -> `typescript`
 - Framework `Next.js`
 - CSS `TailwindCSS`
 - Deploy `Vercel`
