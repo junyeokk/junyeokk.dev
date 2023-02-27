@@ -7,7 +7,7 @@ export default function Header() {
       <header className="text-gray-600 body-font">
         <div className="container mx-auto flex flex-wrap p-5 flex-row items-center font-medium">
           <div className="flex title-font items-center text-gray-900 mb-0">
-            <Link className="ml-3 text-xl" href="/">
+            <Link className="text-xl" href="/">
               junyeokk.dev
             </Link>
           </div>
