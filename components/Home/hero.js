@@ -17,7 +17,7 @@ export default function Hero() {
           react와 next.js를 공부하며 개인 블로그인 junyeokk.dev를 풀스택
           개발하고 있습니다.
         </p>
-        <div className="flex m-0">
+        <div className="flex flex-row m-0">
           <Instagram />
           <LinkedIn />
         </div>
