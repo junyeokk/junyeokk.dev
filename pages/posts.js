@@ -5,12 +5,8 @@ import PostItem from "../components/posts/post-item";
 export default function Posts({ posts }) {
   return (
     <Layout>
-      <div className="m-5">
-        <ol>
-          {posts.results.map((aPost) => (
-            <PostItem key={aPost.id} data={aPost} />
-          ))}
-        </ol>
+      <div className="p-7 min-height-calc">
+        <ol>준비중입니다.</ol>
       </div>
     </Layout>
   );

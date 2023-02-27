@@ -5,7 +5,7 @@ import ProjectItem from "../components/projects/project-item";
 export default function Projects({ projects }) {
   return (
     <Layout>
-      <div className="flex flex-col items-center justify-center min-height-calc px-5 px-6">
+      <div className="flex flex-col items-center justify-center min-height-calc p-7">
         <div className="grid grid-cols-1 md:grid-cols-2 py-10 m-6 gap-8">
           {projects.results.map((aProject) => (
             <ProjectItem key={aProject.id} data={aProject} />
