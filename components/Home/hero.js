@@ -1,3 +1,6 @@
+import Instagram from "../icon/instagram";
+import LinkedIn from "../icon/linkedin";
+
 export default function Hero() {
   return (
     <>
@@ -9,11 +12,15 @@ export default function Hero() {
           안녕하세요! 😆 프론트엔드 개발자를 지망하고 있는 대학생 채준혁입니다.
           <br className="hidden lg:inline-block" />
         </h1>
-        <p className="mb-8 leading-relaxed">
+        <p className="mb-5 leading-relaxed">
           경북대학교에 재학중이며, 현재(2023.02) 3학년입니다. <br />
           react와 next.js를 공부하며 개인 블로그인 junyeokk.dev를 풀스택
           개발하고 있습니다.
         </p>
+        <div className="flex m-0">
+          <Instagram />
+          <LinkedIn />
+        </div>
         <div className="flex justify-center"></div>
       </div>
     </>
