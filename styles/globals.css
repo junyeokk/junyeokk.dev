@@ -7,7 +7,11 @@
 }
 
 .container {
-    @apply max-w-4xl px-0 py-5 m-auto
+    @apply max-w-4xl px-0 m-auto
+}
+
+.min-height-calc {
+    min-height: calc(100vh - 8rem);
 }
 
 .btn-project {
@@ -37,11 +41,6 @@
 
 h1, h2, h3, h4, h5, h6 {
     @apply text-slate-900 dark:text-white
-}
-
-footer {
-    @apply text-gray-600 dark:text-white
-    bg-gray-100 dark:bg-slate-600/20
 }
 
 a {
