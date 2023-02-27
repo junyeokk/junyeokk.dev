@@ -6,7 +6,11 @@ export default function Posts({ posts }) {
   return (
     <Layout>
       <div className="p-7 min-height-calc">
-        <ol>준비중입니다.</ol>
+        <ol>
+          {posts.results.map((aPost) => (
+            <PostItem key={aPost.id} data={aPost} />
+          ))}
+        </ol>
       </div>
     </Layout>
   );
