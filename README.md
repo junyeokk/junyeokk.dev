@@ -3,9 +3,8 @@
 
 ## Stack
 
-- Language `javascript` -> `typescript`
+- Language `typescript`
 - Framework `Next.js`
-- CSS `TailwindCSS`
 - Deploy `Vercel`
 - VCS `Git`
 
